@@ -1,3 +1,29 @@
-h1 {
-	color: red;
+* {
+	margin: 0px;
+	padding: 0px;
+}
+h1.puppies {
+	background: #DDDDFF;
+	text-align: center;
+	margin: 20px 10px 20px 10px;
+}
+a.adoptionbutton {
+	background: #DDDDFF;
+	border-bottom: 1px solid #AAAAEE;
+	border-right: 1px solid #AAAAEE;
+	text-decoration: none;
+	margin: 10px 0px 5px 10px;
+	padding: 2px;
+}
+a.adoptionbutton:hover {
+	border-top: 1px solid #AAAAEE;
+	border-right: 1px solid #FFFFFF;
+	border-bottom: 1px solid #FFFFFF;
+	border-left: 1px solid #AAAAEE;
+}
+img.puppypic {
+	margin: 0px 0px 10px 0px;
+}
+li.puppy {
+	margin: 5px 5px 10px 100px;
 }
