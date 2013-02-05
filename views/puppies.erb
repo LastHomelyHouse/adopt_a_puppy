@@ -9,12 +9,17 @@
 	<body>
 		<h1 class="puppies">Puppies!</h1>
 		<ul>
-			<li class="puppy"><%= erb :'partials/_puppy_li', :layout => false, :locals => { :name => 'Browny', :picture_id => 12 } %>
-			</li>
-			<li class="puppy"><%= erb :'partials/_puppy_li', :layout => false, :locals => { :name => 'Blondie', :picture_id => 5 } %>
-			</li>
-			<li class="puppy"><%= erb :'partials/_puppy_li', :layout => false, :locals => { :name => 'Striped snake', :picture_id => 27 } %>
-			</li>
+		  <% 
+		    puppies = [
+		      { :name => 'Browny', :picture_id => 12 },
+		      { :name => 'Blondie', :picture_id => 5 },
+		      { :name => 'Striped snake', :picture_id => 27 }
+		    ]
+		    
+		    puppies.each do |puppy|
+		    %>
+			<li class="puppy"><%= erb :'partials/_puppy_li', :layout => false, :locals => puppy %> </li>
+			<% end %>
 		</ul>
 	</body>
 </html>
