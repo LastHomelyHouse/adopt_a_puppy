@@ -9,14 +9,11 @@
 	<body>
 		<h1 class="puppies">Puppies!</h1>
 		<ul>
-			<li class="puppy">Brownie <br /><img class="puppypic" src="http://placepuppy.it/100/100&n=12"/>
-			<br /><a href="/puppy" class="adoptionbutton">Adopt Me!</a>
+			<li class="puppy"><%= erb :'partials/_puppy_li', :layout => false, :locals => { :name => 'Browny', :picture_id => 12 } %>
 			</li>
-			<li class="puppy">Blondie <br /><img class="puppypic" src="http://placepuppy.it/100/100&n=5">
-			<br /><a href="/puppy" class="adoptionbutton">Adopt Me!</a>
+			<li class="puppy"><%= erb :'partials/_puppy_li', :layout => false, :locals => { :name => 'Blondie', :picture_id => 5 } %>
 			</li>
-			<li class="puppy">Striped Snake <br /><img class="puppypic" src="http://placepuppy.it/100/100&n=27">
-    		<br /><a href="/puppy" class="adoptionbutton">Adopt Me!</a>
+			<li class="puppy"><%= erb :'partials/_puppy_li', :layout => false, :locals => { :name => 'Striped snake', :picture_id => 27 } %>
 			</li>
 		</ul>
 	</body>
