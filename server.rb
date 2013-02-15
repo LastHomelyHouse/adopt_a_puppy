@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'yaml'
 
 get "/puppies" do
   erb :puppies 
