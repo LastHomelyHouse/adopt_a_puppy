@@ -10,8 +10,6 @@
 		<h1 class="puppies">Puppies!</h1>
 		<ul>
 		  <% 
-		    puppies = YAML.load File.read('./database.yml')
-		    
 		    puppies.values.each do |puppy|
 		    %>
 			<li class="puppy"><%= erb :'partials/_puppy_li', :layout => false, :locals => puppy %> </li>

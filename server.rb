@@ -10,3 +10,7 @@ get "/puppy/:name/:picture_id" do
   @picture_id = params[:picture_id]
   erb :puppy
 end
+
+def puppies
+  @puppies ||= YAML.load File.read('./database.yml')
+end
