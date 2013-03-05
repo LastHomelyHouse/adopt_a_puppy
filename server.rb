@@ -5,9 +5,8 @@ get "/puppies" do
   erb :puppies 
 end
 
-get "/puppy/:name/:picture_id" do
-  @name = params[:name]
-  @picture_id = params[:picture_id]
+get "/puppy/:name" do
+  @id = params[:name]
   erb :puppy
 end
 
