@@ -5,9 +5,24 @@ get "/puppies" do
   erb :puppies 
 end
 
+get "/puppy/add" do
+  erb :puppy_add_form
+end
+
 get "/puppy/:name" do
   @id = params[:name]
   erb :puppy
+end
+
+post "/puppy/add" do
+  id = params[:id]
+  name = params[:name]
+  picture_id = params[:picture_id]
+  bio = params[:bio]
+  
+  puppies[id] = {:id => id, :name => name, :picture_id => picture_id, :bio => bio }
+
+  puppies.to_yaml 
 end
 
 def puppies
