@@ -2,9 +2,12 @@
 browny:
   :name: Browny
   :picture_id: 12
+  :bio: I am twelve weeks old and very playful!
 blondie:
   :name: Blondie
   :picture_id: 5
+  :bio: I like to take naps.
 striped_snake:
   :name: Striped snake
   :picture_id: 27
+  :bio: I am not a snake.  I'm a young dog.  And I don't have stripes.
