@@ -1,19 +1,10 @@
-<html>
-	<head>
-		<title>
-			Adopt A Puppy
-		</title>
-		<link rel="stylesheet" type="text/css" href="/stylesheet.css" />
-	</head>
-
-	<body>
-		<h1 class="puppies">Puppies!</h1>
-		<ul>
-		  <% 
-		    puppies.values.each do |puppy|
-		    %>
-			<li class="puppy"><%= erb :'partials/_puppy_li', :layout => false, :locals => puppy %> </li>
-			<% end %>
-		</ul>
-	</body>
-</html>
+<h1 class="puppies">Puppies!</h1>
+<ul>
+  <%
+  puppies.values.each do |puppy|
+  %>
+  <li class="puppy">
+    <%= erb :'partials/_puppy_li', :layout => false, :locals => puppy %>
+  </li>
+  <% end %>
+</ul>

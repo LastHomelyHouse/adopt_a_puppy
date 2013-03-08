@@ -1,11 +1,6 @@
-<html>
-	<head>
-		<title>Adopt This Puppy!</title>
-	</head>
-	<% puppy = puppies[@id] %>
-	<body>
-		<h1>Adopt Me!</h1>
-		<p>Hi!! My name is <%= puppy[:name] %>... <%= puppy[:bio] %></p>
-		<p><img src="http://placepuppy.it/300/300&n=<%= puppy[:picture_id] %>"/></p>
-	</body>
-</html>
+<% puppy = puppies[@id] %> <h1>Adopt Me!</h1>
+<p>
+  Hi!! My name is <%= puppy[:name] %>... <%= puppy[:bio] %>
+</p>
+<p><img src="http://placepuppy.it/300/300&n=<%= puppy[:picture_id] %>"/>
+</p>
