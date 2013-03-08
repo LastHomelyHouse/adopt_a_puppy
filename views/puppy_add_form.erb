@@ -1,6 +1,26 @@
-<form method=post action="/puppy/add">
-  id: <input type=text name="id" />
-  name: <input type=text name="name" />
-  <input type=submit value="add this puppy" />
-</form>  
-  
+<html>
+  <head>
+    <title> Add a puppy! </title>
+    <link rel="stylesheet" type="text/css" href="/stylesheet.css" />
+  </head>
+
+  <body>
+    <h1>Add a puppy!</h1>
+    <form method=post action="/puppy/add">
+      <p><label>id</label>
+      <input type=text name="id" /></p>
+      <br />
+      <p><label>name</label>
+      <input type=text name="name" /></p>
+      <br />
+      <p><label>picture_id</label>
+      <input type=text name="picture_id" /></p>
+      <br />
+      <p><label>bio</label>
+      <br/>
+      <textarea name="bio" rows=4 cols=50></textarea></p>
+<br/>      <input type=submit value="add this puppy" />
+    </form>
+  </body>
+</html>
+

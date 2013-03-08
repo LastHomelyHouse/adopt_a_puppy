@@ -27,3 +27,9 @@ img.puppypic {
 li.puppy {
 	margin: 5px 5px 10px 100px;
 }
+
+form label {
+  width: 6em;
+  display: block;
+  float: left;
+}
