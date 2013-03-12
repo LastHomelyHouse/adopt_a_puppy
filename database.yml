@@ -14,3 +14,8 @@ striped_snake:
   :name: Striped snake
   :picture_id: 27
   :bio: I am not a snake.  I'm a young dog.  And I don't have stripes.
+gregory:
+  :id: gregory
+  :name: Gregory
+  :picture_id: '15'
+  :bio: Who could resist a puppy with that name?

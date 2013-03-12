@@ -1,6 +1,8 @@
 require 'sinatra'
 require 'yaml'
 
+DATABASE = './database.yml'
+
 get "/puppies" do
   erb :puppies 
 end
@@ -22,9 +24,11 @@ post "/puppy/add" do
   
   puppies[id] = {:id => id, :name => name, :picture_id => picture_id, :bio => bio }
 
-  puppies.to_yaml 
+  file_handle = File.open(DATABASE, 'w')
+  file_handle.write puppies.to_yaml 
+  file_handle.close
 end
 
 def puppies
-  @puppies ||= YAML.load File.read('./database.yml')
+  @puppies ||= YAML.load File.read(DATABASE)
 end
