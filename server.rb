@@ -16,6 +16,10 @@ get "/puppy/:name" do
   erb :puppy
 end
 
+get "/puppy/:name/edit" do\
+  erb :puppy_edit_form, :locals => puppies[params[:name]]
+end
+
 post "/puppy/add" do
   id = params[:id]
   name = params[:name]
@@ -24,9 +28,10 @@ post "/puppy/add" do
   
   puppies[id] = {:id => id, :name => name, :picture_id => picture_id, :bio => bio }
 
-  file_handle = File.open(DATABASE, 'w')
-  file_handle.write puppies.to_yaml 
-  file_handle.close
+  File.open(DATABASE, 'w') do |file_handle|
+    file_handle.write puppies.to_yaml 
+  end
+  redirect "/puppy/#{id}"
 end
 
 def puppies

@@ -19,3 +19,13 @@ gregory:
   :name: Gregory
   :picture_id: '15'
   :bio: Who could resist a puppy with that name?
+jinny:
+  :id: jinny
+  :name: Jinny
+  :picture_id: '44'
+  :bio: Hi, I am just born now
+maddie:
+  :id: maddie
+  :name: Maddie
+  :picture_id: '24'
+  :bio: I can't bark because I am really shy...
