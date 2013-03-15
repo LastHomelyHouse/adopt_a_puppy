@@ -1,15 +1,15 @@
-<h1>Add a puppy!</h1>
+<h1>Edit a puppy!</h1>
 <form method=post action="/puppy/add">
 <p><label>id</label>
 <input type=text name="id" value="<%= id %>" /></p>
 <br />
 <p><label>name</label>
-<input type=text name="name" /></p>
+<input type=text name="name" value="<%= name %>" /></p>
 <br />
 <p><label>picture_id</label>
-<input type=text name="picture_id" /></p>
+<input type=text name="picture_id" value="<%= picture_id %>" /></p>
 <br />
 <p><label>bio</label>
 <br/>
-<textarea name="bio" rows=4 cols=50></textarea></p>
-<br/>      <input type=submit value="add this puppy" />
+<textarea name="bio" rows=4 cols=50><%= bio %></textarea></p>
+<br/>      <input type=submit value="Submit Changes" />
