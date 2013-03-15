@@ -1,3 +1,4 @@
+<a href="/puppies">home</a>
 <h1>Edit a puppy!</h1>
 <form method=post action="/puppy/add">
 <p><label>id</label>
@@ -13,3 +14,4 @@
 <br/>
 <textarea name="bio" rows=4 cols=50><%= bio %></textarea></p>
 <br/>      <input type=submit value="Submit Changes" />
+<a href="/puppy/<%= id %>">cancel</a>

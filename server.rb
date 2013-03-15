@@ -37,3 +37,8 @@ end
 def puppies
   @puppies ||= YAML.load File.read(DATABASE)
 end
+
+get "/puppy/:id/delete" do
+  puppies.delete params[:id]
+  puppies.to_yaml
+end
