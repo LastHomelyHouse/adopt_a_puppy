@@ -23,7 +23,7 @@ end
 post "/puppy/add" do
   id = params[:id]
   name = params[:name]
-  picture_id = params[:picture_id]
+  picture_id = params[:picture_id].to_i
   bio = params[:bio]
   
   puppies[id] = {:id => id, :name => name, :picture_id => picture_id, :bio => bio }
