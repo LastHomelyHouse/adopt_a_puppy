@@ -3,12 +3,12 @@ browny:
   :id: browny
   :name: Browny
   :picture_id: 12
-  :bio: I am twelve weeks old and very playful!
+  :bio: I am twelve weeks old and very playful! Let's go!
 blondie: 
   :id: blondie
   :name: Blondie
   :picture_id: 5
-  :bio: I like to take naps.
+  :bio: I like to take naps. 
 striped_snake: 
   :id: striped_snake
   :name: Striped snake
