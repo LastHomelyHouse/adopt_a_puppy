@@ -42,3 +42,11 @@ get "/puppy/:id/delete" do
   puppies.delete params[:id]
   puppies.to_yaml
 end
+
+get "/puppy/:id/ask_a_question" do
+  erb :ask_a_question_form 
+end
+
+post "/puppy/:id/ask_a_question" do
+   erb :question_thank_you
+end
