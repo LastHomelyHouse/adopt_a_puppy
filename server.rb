@@ -48,5 +48,10 @@ get "/puppy/:id/ask_a_question" do
 end
 
 post "/puppy/:id/ask_a_question" do
+  questions=[]
+  questions << params
+  File.open('questions.yml','w') do |file_handle|
+    file_handle.write questions.to_yaml
+  end
    erb :question_thank_you
 end
